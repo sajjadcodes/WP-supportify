@@ -96,22 +96,23 @@ get_header();
     <section class="solution py-5 bg-primary text-white">
         <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 align-items-center">
+            <div class="col-lg-6 d-flex flex-column">
             <h2 class="display-5 fw-bold mb-3"><?php echo esc_html($third_heading); ?></h2>
             <p class="lead mb-4"><?php echo esc_html($third_description); ?></p>
             <?php if ($third_button_label && $third_button_link): ?>
-                    <button class="btn btn-light btn-lg mb-5">
+				<div class="text-left">
+                    <button class="btn btn-light btn-lg">
                         <a href="<?php echo esc_url($third_button_link); ?>" class="button-link"><?php echo esc_html($third_button_label); ?></a>
                     </button>
+				</div>
                 <?php endif; ?>
-            </div>
-
+			</div>
             <?php if (have_rows('l_images_and_text')): ?>
                 <div class="col-lg-6 text-center align-items-center">
                     <?php
                     $counter = 0; // Counter to group items into rows
                     ?>
-                    <div class="row g-4 py-5">
+                    <div class="row g-4 pb-3">
                         <?php while (have_rows('l_images_and_text')): the_row(); 
                             $image = get_sub_field('image'); // Get the image subfield
                             $text = get_sub_field('text');   // Get the text subfield
@@ -131,7 +132,7 @@ get_header();
                         </div>
                         <?php if ($counter % 3 === 0): // Close and open a new row every 3 items ?>
                             </div>
-                            <div class="row g-4">
+                            <div class="row g-4 pb-3">
                         <?php endif; ?>
                         <?php endwhile; ?>
                     </div>
@@ -196,7 +197,9 @@ get_header();
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">See the Difference Speed Makes. Guaranteed</h2>
             <p class="lead mb-4">Offer guarantees or performance improvement promises.</p>
-            <button class="btn btn-light btn-lg">Get Free Consultation</button>
+            <button class="btn btn-light btn-lg">
+				<a href="https://wpsupportify.com/book-a-meeting/" class="button-link">Get Free Consultation</a>
+			</button>
         </div>
     </section>
 

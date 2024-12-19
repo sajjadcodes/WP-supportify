@@ -74,7 +74,7 @@ body {
 
 .accordion-button {
     background-color: #f8f9fa;
-    color: #333;
+    color: #0E1B3C !important;
     font-weight: 500;
     padding: 1rem 1.25rem;
     border-radius: 0.25rem !important;
@@ -108,6 +108,25 @@ body {
     padding: 1rem 1.25rem;
 }
 
+.signs .button-link {
+    color: #fff;
+}
+
+.signs .button-link:hover {
+    color: #0E1B3C;
+}
+
+a:hover {
+	color: #0d6efd !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.cta-dark .btn-lg {
+    color: #212529 !important;
+}
 
 @media (max-width: 768px) {
     .display-4 {
