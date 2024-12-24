@@ -35,6 +35,15 @@ function hello_elementor_child_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
+function enqueue_child_theme_bootstrap() {
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' );
+
+    // Enqueue Bootstrap JS
+    wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array(), null, true );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_bootstrap' );
+
 
 function create_services_post_type() {
     $labels = array(
