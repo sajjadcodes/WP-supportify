@@ -254,6 +254,7 @@ get_header();
             <?php endif; ?>
         </div>
     </section>
+
 </body>
 </html>
 <?php
