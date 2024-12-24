@@ -35,7 +35,7 @@ get_header();
                     <p class="lead mb-4"><?php the_content(); ?></p>
                     <?php if ($hero_button_label && $hero_button_link): ?>
                     <button 
-                        class="btn btn-light btn-lg button-link" 
+                        class="btn btn-light btn-lg" 
                         onclick="window.location.href='<?php echo esc_url($hero_button_link); ?>'" 
                         type="button">
                         <?php echo esc_html($hero_button_label); ?>
@@ -108,7 +108,7 @@ get_header();
             <?php if ($third_button_label && $third_button_link): ?>
 				<div class="text-left">
                 <button 
-                    class="btn btn-light btn-lg button-link" 
+                    class="btn btn-light btn-lg" 
                     onclick="window.location.href='<?php echo esc_url($third_button_link); ?>'" 
                     type="button">
                     <?php echo esc_html($third_button_label); ?>
@@ -208,7 +208,7 @@ get_header();
             <h2 class="display-5 fw-bold mb-3">See the Difference Speed Makes. Guaranteed</h2>
             <p class="lead mb-4">Offer guarantees or performance improvement promises.</p>
             <button 
-                class="btn btn-light btn-lg button-link" 
+                class="btn btn-light btn-lg" 
                 onclick="window.location.href='https://wpsupportify.com/book-a-meeting/'" 
                 type="button">
                 Get Free Consultation

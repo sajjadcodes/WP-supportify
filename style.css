@@ -14,7 +14,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
 /* Add your custom styles here */
 :root {
-    --bs-primary: #1a73e8;
+    --bs-primary: #185CE3;
     --bs-primary-rgb: 26, 115, 232;
 }
 
@@ -118,15 +118,19 @@ body {
 }
 
 .signs .button-link {
-    color: #fff;
-}
-
-.signs .button-link:hover {
     color: #fff !important;
 }
 
-a:hover {
-	color: #0d6efd !important;
+.signs .button-link:hover {
+    color: #185CE3 !important;
+}
+
+.btn {
+    color: #185CE3 !important;
+}
+
+.btn:hover {
+	color: #185CE3 !important;
 }
 
 a {
