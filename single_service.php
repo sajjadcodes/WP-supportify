@@ -34,7 +34,12 @@ get_header();
                     <h1 class="display-4 fw-bold mb-3"><?php the_title(); ?></h1>
                     <p class="lead mb-4"><?php the_content(); ?></p>
                     <?php if ($hero_button_label && $hero_button_link): ?>
-                        <a href="<?php echo esc_url($hero_button_link); ?>" class="btn btn-light btn-lg button-link"><?php echo esc_html($hero_button_label); ?></a>
+                    <button 
+                        class="btn btn-light btn-lg button-link" 
+                        onclick="window.location.href='<?php echo esc_url($hero_button_link); ?>'" 
+                        type="button">
+                        <?php echo esc_html($hero_button_label); ?>
+                    </button>
                     <?php endif; ?>
                 </div>
                 <div class="col-lg-6">
@@ -61,7 +66,12 @@ get_header();
                 </div>
                 <div class="col-lg-6 d-flex justify-content-end align-items-end">
                 <?php if ($second_button_label && $second_button_link): ?>
-                    <a href="<?php echo esc_url($second_button_link); ?>" class="btn btn-primary btn-lg button-link"><?php echo esc_html($second_button_label); ?></a>
+                    <button 
+                        class="btn btn-primary btn-lg button-link" 
+                        onclick="window.location.href='<?php echo esc_url($second_button_link); ?>'" 
+                        type="button">
+                        <?php echo esc_html($second_button_label); ?>
+                    </button>
                 <?php endif; ?>
                 </div>
                 <?php if (have_rows('images_and_text')): ?>
@@ -97,7 +107,12 @@ get_header();
             <p class="lead mb-4"><?php echo esc_html($third_description); ?></p>
             <?php if ($third_button_label && $third_button_link): ?>
 				<div class="text-left">
-                    <a href="<?php echo esc_url($third_button_link); ?>" class="btn btn-light btn-lg button-link"><?php echo esc_html($third_button_label); ?></a>
+                <button 
+                    class="btn btn-light btn-lg button-link" 
+                    onclick="window.location.href='<?php echo esc_url($third_button_link); ?>'" 
+                    type="button">
+                    <?php echo esc_html($third_button_label); ?>
+                </button>
 				</div>
                 <?php endif; ?>
 			</div>
@@ -192,7 +207,12 @@ get_header();
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">See the Difference Speed Makes. Guaranteed</h2>
             <p class="lead mb-4">Offer guarantees or performance improvement promises.</p>
-            <a href="https://wpsupportify.com/book-a-meeting/" class="btn btn-light btn-lg button-link">Get Free Consultation</a>
+            <button 
+                class="btn btn-light btn-lg button-link" 
+                onclick="window.location.href='https://wpsupportify.com/book-a-meeting/'" 
+                type="button">
+                Get Free Consultation
+            </button>
         </div>
     </section>
 
