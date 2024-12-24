@@ -59,7 +59,7 @@ function create_services_post_type() {
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'services'), // URL rewrite
+        'rewrite' => array('slug' => 'service'), // URL rewrite
         'capability_type' => 'post',
         'has_archive' => true, // Archive page
         'hierarchical' => false,
