@@ -27,16 +27,14 @@ get_header();
     $third_button_label = get_field('third_button_label');
     $third_button_link = get_field('third_button_link');
 ?>
-    <header class="hero bg-primary text-white py-5">
+    <header class="hero bg-primary text-white py-80">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h1 class="display-4 fw-bold mb-3"><?php the_title(); ?></h1>
                     <p class="lead mb-4"><?php the_content(); ?></p>
                     <?php if ($hero_button_label && $hero_button_link): ?>
-                        <button class="btn btn-light btn-lg">
-                            <a href="<?php echo esc_url($hero_button_link); ?>" class="button-link"><?php echo esc_html($hero_button_label); ?></a>
-                        </button>
+                        <a href="<?php echo esc_url($hero_button_link); ?>" class="btn btn-light btn-lg button-link"><?php echo esc_html($hero_button_label); ?></a>
                     <?php endif; ?>
                 </div>
                 <div class="col-lg-6">
@@ -50,7 +48,7 @@ get_header();
         </div>
     </header>
 
-    <section class="signs py-5 bg-light">
+    <section class="signs py-80 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -63,9 +61,7 @@ get_header();
                 </div>
                 <div class="col-lg-6 d-flex justify-content-end align-items-end">
                 <?php if ($second_button_label && $second_button_link): ?>
-                    <button class="btn btn-primary btn-lg">
-                        <a href="<?php echo esc_url($second_button_link); ?>" class="button-link"><?php echo esc_html($second_button_label); ?></a>
-                    </button>
+                    <a href="<?php echo esc_url($second_button_link); ?>" class="btn btn-primary btn-lg button-link"><?php echo esc_html($second_button_label); ?></a>
                 <?php endif; ?>
                 </div>
                 <?php if (have_rows('images_and_text')): ?>
@@ -93,22 +89,20 @@ get_header();
         </div>
     </section>
 
-    <section class="solution py-5 bg-primary text-white">
+    <section class="solution py-80 bg-primary text-white">
         <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 d-flex flex-column">
+            <div class="col-lg-6 d-flex flex-column py-3">
             <h2 class="display-5 fw-bold mb-3"><?php echo esc_html($third_heading); ?></h2>
             <p class="lead mb-4"><?php echo esc_html($third_description); ?></p>
             <?php if ($third_button_label && $third_button_link): ?>
 				<div class="text-left">
-                    <button class="btn btn-light btn-lg">
-                        <a href="<?php echo esc_url($third_button_link); ?>" class="button-link"><?php echo esc_html($third_button_label); ?></a>
-                    </button>
+                    <a href="<?php echo esc_url($third_button_link); ?>" class="btn btn-light btn-lg button-link"><?php echo esc_html($third_button_label); ?></a>
 				</div>
                 <?php endif; ?>
 			</div>
             <?php if (have_rows('l_images_and_text')): ?>
-                <div class="col-lg-6 text-center align-items-center">
+                <div class="col-lg-6 text-center align-items-center py-3">
                     <?php
                     $counter = 0; // Counter to group items into rows
                     ?>
@@ -142,7 +136,7 @@ get_header();
         </div>
     </section>
 
-    <section class="difference py-5 bg-light">
+    <section class="difference py-80 bg-white">
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">
                 See the <span class="text-primary">Difference</span> Our <span class="text-primary">Speed</span><br>
@@ -151,7 +145,8 @@ get_header();
             <p class="lead mb-5">Unleash its full potential with our expert speed optimization services. Increase conversions, improve SEO, and boost user experience.</p>
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://via.placeholder.com/600x300?text=Graph" alt="Performance Graph" class="img-fluid rounded">
+                    <!-- <img src="https://via.placeholder.com/600x300?text=Graph" alt="Performance Graph" class="img-fluid rounded"> -->
+                    <img src="http://wpsupportify.com/wp-content/uploads/2024/12/Speed-Test_Freepik-min.jpg" alt="Performance Graph" class="img-fluid img-1">
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4">
@@ -166,24 +161,24 @@ get_header();
                         <div class="col-6">
                             <div class="card bg-primary text-white">
                                 <div class="card-body">
-                                    <h3 class="display-4 fw-bold">250+</h3>
-                                    <p class="mb-0">Happy Client</p>
+                                    <h3 class="display-4 fw-bold">24/7</h3>
+                                    <p class="mb-0">Support Availability</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="card bg-primary text-white">
                                 <div class="card-body">
-                                    <h3 class="display-4 fw-bold">250+</h3>
-                                    <p class="mb-0">Happy Client</p>
+                                    <h3 class="display-4 fw-bold">99+</h3>
+                                    <p class="mb-0">Uptime Achieved</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="card bg-primary text-white">
                                 <div class="card-body">
-                                    <h3 class="display-4 fw-bold">250+</h3>
-                                    <p class="mb-0">Happy Client</p>
+                                    <h3 class="display-4 fw-bold">100%</h3>
+                                    <p class="mb-0">Client Satisfaction</p>
                                 </div>
                             </div>
                         </div>
@@ -193,17 +188,15 @@ get_header();
         </div>
     </section>
 
-    <section class="cta-dark py-5 bg-dark text-white">
+    <section class="cta-dark py-80 text-white">
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">See the Difference Speed Makes. Guaranteed</h2>
             <p class="lead mb-4">Offer guarantees or performance improvement promises.</p>
-            <button class="btn btn-light btn-lg">
-				<a href="https://wpsupportify.com/book-a-meeting/" class="button-link">Get Free Consultation</a>
-			</button>
+            <a href="https://wpsupportify.com/book-a-meeting/" class="btn btn-light btn-lg button-link">Get Free Consultation</a>
         </div>
     </section>
 
-    <section class="faq py-5">
+    <section class="faq py-80">
         <div class="container">
             <h2 class="display-5 fw-bold text-center mb-5">FAQs</h2>
             <?php if (have_rows('faq')): ?>
