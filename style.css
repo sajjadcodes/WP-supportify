@@ -145,11 +145,18 @@ a {
     color: #0E1B3C !important;
 }
 
+.accordion-item {
+    width: 100%; /* Ensure the accordion spans the full width */
+}
+
 @media (max-width: 768px) {
     .display-4 {
         font-size: 2.5rem;
     }
     .display-5 {
         font-size: 2rem;
+    }
+    .accordion-button {
+        white-space: normal !important;
     }
 }
