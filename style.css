@@ -40,6 +40,11 @@ body {
     color: var(--bs-primary);
 }
 
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .card {
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,6 +70,10 @@ body {
 
 .faq {
     background-color: #ffffff;
+}
+
+.img-1{
+    width: 70% !important;
 }
 
 .accordion-item {
@@ -113,7 +122,7 @@ body {
 }
 
 .signs .button-link:hover {
-    color: #0E1B3C;
+    color: #fff !important;
 }
 
 a:hover {
@@ -124,8 +133,12 @@ a {
     text-decoration: none !important;
 }
 
+.cta-dark{
+    background-color: #0E1B3C;
+}
+
 .cta-dark .btn-lg {
-    color: #212529 !important;
+    color: #0E1B3C !important;
 }
 
 @media (max-width: 768px) {
